@@ -12,15 +12,15 @@ ElderBot is your friendly neighbordhood discord bot. He comes knocking on your c
 
 ElderBot will knock on your door and wait for you to open it. If you say yes, ElderBot will send a random verse.
 
-<img src='src/yes.gif' width=80% >
+<img src='src/yes.gif' width=95% >
 
 If you say no, he will quietly leave. You can also make ElderBot sprint to your door.
 
-<img src='src/no.gif' width=80% >
+<img src='src/no.gif' width=95% >
 
 You can set the interval at which ElderBot comes knocking and how long ElderBot will wait at the door.
 
-<img src='src/settings.png' width=80% >
+<img src='src/settings.png' width=95% >
 
 # Subjects
 
