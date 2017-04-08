@@ -29,7 +29,7 @@ module.exports = class TestCommand extends elder.Command {
 
     async run(message, args){
         var v = args.int_key.split(" ");
-        console.log(v.length);
+
         if(v.length == 2) {
             var n;
             //if a number

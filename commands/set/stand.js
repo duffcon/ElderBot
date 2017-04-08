@@ -29,19 +29,19 @@ module.exports = class TestCommand extends elder.Command {
 
     async run(message, args){
         var v = args.int_key.split(" ");
-        console.log(v.length);
+
         if(v.length == 2) {
             var n;
             //if a number
             if(parseInt(v[0])) {
                 var m = this.me.toMili(parseInt(v[0]),v[1]);
-                console.log(m);
+
                 if(m != -1) {
                     this.me.myStates[2].time = m;
                     pool.connect( (err, client, done) => {
                         client.query('update settings set time = $1 where name = \'knock\'',[m], (err, result) => {
                             done(err);
-                            console.log(m);
+
                             message.reply('Stand Time Updated');
 
                         });
