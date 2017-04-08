@@ -35,7 +35,10 @@ You can set the interval at which ElderBot comes knocking and how long ElderBot 
 
 # How do I install?
 
-*Prerequisite: you already created a bot and added it to your server. If you don't know what that means checkout: https://github.com/duffcon/SimpleDiscordBot*
+*Prerequisites:*
+* [*bot created and added to your discord server*](https://github.com/duffcon/SimpleDiscordBot)
+* [*Installed psycopg2 for python*](https://github.com/duffcon/ElderBot/wiki/0.-Psycopg2)
+
 
 ## Clone Repo
 
@@ -127,3 +130,5 @@ Start it up.
 ```bash
 node .
 ```
+
+Check [wiki](https://github.com/duffcon/ElderBot/wiki) for more info
