@@ -41,7 +41,8 @@ You can set the interval at which ElderBot comes knocking and how long ElderBot 
 
 ```bash
 git clone https://github.com/duffcon/ElderBot.git
-
+```
+```bash
 #Gets ALL branches
 for branch in $(git branch --all | grep '^\s*remotes' | egrep --invert-match '(:?HEAD|master)$'); do
     git branch --track "${branch##*/}" "$branch"
@@ -80,15 +81,20 @@ create database elder with owner=elder connection limit=25;
 alter user elder with superuser;
 ```
 
+```
+\q
+exit
+```
 
-### Run python script
+
+### Run Python Script
 
 ```bash
 python ParseText.py
 
 ```
 
-If it worked a random verse should appear in your terminal.
+A random verse should appear in your terminal.
 
 
 ## Setup
