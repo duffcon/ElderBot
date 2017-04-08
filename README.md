@@ -9,7 +9,18 @@
 ElderBot is your friendly neighbordhood discord bot. He comes knocking on your chat door to help spread the good word. ElderBot has been rigorously studying the Book of Mormon memorzing every letter of every verse. So please open your hearts and doors and get to know ElderBot.
 
 # Demo
-soon
+
+ElderBot will knock on your door and wait for you to open it. If you say yes, ElderBot will send a random verse.
+
+<img src='src/yes.gif' width=80% >
+
+If you say no, he will quietly leave. You can also make ElderBot sprint to your door.
+
+<img src='src/no.gif' width=80% >
+
+You can set the interval at which ElderBot comes knocking and how long ElderBot will wait at the door.
+
+<img src='src/settings.png' width=80% >
 
 # Subjects
 
@@ -102,7 +113,7 @@ Channel_id is so the bot knows where to send messages. User_id adds permissions 
 
 ```javascript
 //index.js
-var bot = new elder('!', 'Channel_id', ['User_id']);
+var bot = new elder('prefix', 'Channel_id', ['User_id']);
 bot.login('Bot_token');
 ```
 

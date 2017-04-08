@@ -1,7 +1,7 @@
 const elder = require('./elderBot.js');
 var pool = require('./databaseClient.js');
 
-var bot = new elder('prefix', 'channel_id', ['user_id']);
+var bot = new elder('!', 'channel_id', ['user_id']);
 
 bot.login('token');
 // Register Commands
