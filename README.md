@@ -112,9 +112,9 @@ npm install
 ### Insert Super Secret Information
 
 
-**1. Channel_id:** In Discordright right click on text channel -> Copy ID
+**1. Channel_id:** In Discord, right click on text channel -> Copy ID
 
-**2. User_id:** In Discord, in right hand side panel, right click on your profile -> Copy ID
+**2. User_id:** In Discord, on right hand side panel, right click on your profile -> Copy ID
 
 **3. Bot_token:** On discord developer website where you created your app/bot.
 
