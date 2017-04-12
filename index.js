@@ -171,6 +171,16 @@ bot.on('clearprogress', (time,state) =>{
     });
 })
 
+
+bot.on('newsit', (time) =>{
+    pool.connect((err, client, done) => {
+        //Does settings database exist, if so load it into mysettings
+        client.query('update settings set (time) = ($1) where name=\'sit\'',[time], (err, result) => {
+            done(err);
+        });
+    });
+})
+
 /**********************************************
 
 

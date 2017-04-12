@@ -43,7 +43,8 @@ module.exports = class elderBot extends discordbot.Client {
         this.myStates[1].getTime = function(){
             var min = 0.3;
             var temp = Math.floor(Math.random() * ((this.time) - (this.time * min)) + (this.time * min));
-            this.self[4].time = (this.time - temp)
+            this.self[4].time = (this.time - temp);
+            this.self.emit('newsit', this.self[4].time);
             return temp;
         };
 
