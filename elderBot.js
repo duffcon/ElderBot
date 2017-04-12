@@ -37,14 +37,14 @@ module.exports = class elderBot extends discordbot.Client {
             new this.elderState(1, 'sit', 0, 1)
         ];
         //must contain scope of class to access other states
-        this.elderState.prototype.self = this.myStates;
+        this.elderState.prototype.self = this;
 
         // Customize getTimes for specific states here:
         this.myStates[1].getTime = function(){
             var min = 0.3;
             var temp = Math.floor(Math.random() * ((this.time) - (this.time * min)) + (this.time * min));
-            this.self[4].time = (this.time - temp);
-            this.self.emit('newsit', this.self[4].time);
+            this.self.myStates[4].time = (this.time - temp);
+            this.self.emit('newsit', this.self.myStates[4].time);
             return temp;
         };
 
